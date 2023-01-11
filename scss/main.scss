@@ -1,0 +1,221 @@
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+:root {
+    --bgcolor: #121217;
+    --textcolor: #FFFFFF;
+    --formborder: #EAEAEA;
+    --btncolor: #2945FF;
+    --dark: #000;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bgcolor);
+    color: var(--textcolor);
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, .7);
+    backdrop-filter: blur(2px);
+}
+
+nav {
+    width: 100%;
+
+    .navlinks a {
+        text-decoration: none;
+        color: var(--textcolor);
+        cursor: pointer;
+    }
+
+}
+
+.btn {
+    padding: 0.3rem 1rem;
+    border-radius: 1.5rem;
+    background-color: var(--btncolor);
+    color: var(--textcolor);
+}
+
+.text {
+    font-size: 0.9rem;
+}
+
+.home {
+    height: 100vh;
+
+    .home-content {
+        width: 45%;
+
+        .content>* {
+            margin-bottom: 2rem;
+        }
+
+        .content {
+            form {
+                width: 85%;
+                border: 1px solid var(--formborder);
+                padding: 0.4rem 0.5rem;
+                border-radius: 1.5rem;
+
+                input {
+                    border: 0;
+                    background: transparent;
+                    color: var(--textcolor);
+                }
+            }
+        }
+    }
+
+    .home-img {
+        width: 45%;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+// Category
+.category {
+    margin: 5rem;
+    height: 80vh;
+
+    .category-card {
+        width: 45%;
+        background-color: #EDF5FF;
+        color: var(--dark);
+        border-radius: 0.5rem;
+        padding: 1.5rem;
+        margin-top: 2rem;
+
+        .card-info {
+            width: 55%;
+
+            a {
+                color: var(--dark);
+                text-decoration: none;
+                font-size: 0.8rem;
+                font-weight: 600;
+            }
+        }
+
+        .card-img {
+            width: 40%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.category>* {
+    margin-bottom: 1.5rem;
+}
+
+.course-card {
+    border: 1px solid rgba(255, 255, 255, .1);
+    border-radius: 1.5rem;
+    background-color: transparent;
+    padding: 1rem;
+    width: 45%;
+    margin-bottom: 1.5rem;
+
+
+    .card-img {
+        background-color: #EEF9FF;
+        border-radius: 1.25rem;
+        width: 35%;
+
+        img {
+            width: 80%;
+        }
+    }
+
+    .card-info {
+        width: 55%;
+
+        p {
+            font-size: 0.7rem;
+        }
+
+        a {
+            color: var(--textcolor);
+            text-decoration: none;
+        }
+    }
+}
+
+.customer-card {
+    width: 30%;
+    border-radius: 1rem;
+
+    .customer-img {
+        position: relative;
+        z-index: -999;
+
+        img {
+            width: 100%;
+
+            z-index: -999;
+        }
+    }
+
+    .customer-info {
+        background-color: var(--dark);
+        padding: 1rem;
+        margin-top: -2.5rem;
+        padding-top: 1.5rem;
+        border-radius: 1rem;
+        width: 100%;
+
+        .customer-details {
+            font-size: 0.75rem;
+        }
+    }
+}
+
+.contact-input {
+    width: 100%;
+
+    .map {
+        width: 45%;
+
+        iframe {
+            width: 100%;
+        }
+    }
+
+    form {
+        width: 45%;
+
+        input,
+        textarea {
+            background-color: var(--dark);
+            color: var(--textcolor);
+            border: 0;
+            width: 100%;
+            margin: 0.8rem 0;
+            padding: 0.7rem;
+            border-radius: 0.5rem;
+        }
+
+        button {
+            background-color: var(--dark);
+            color: var(--textcolor);
+            border: 0;
+            border-radius: 0.5rem;
+            padding: 0.7rem 2rem;
+        }
+    }
+}
