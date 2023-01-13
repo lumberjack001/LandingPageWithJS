@@ -2,6 +2,7 @@ let card = document.querySelector('.cards')
 let courses = document.querySelector('.courses')
 let list = document.querySelector('.customer-list')
 
+
 const learningCat = [
     {
         id: 1
@@ -77,6 +78,7 @@ for(let i = 0; i<arr.length; i++){
     let fetch = document.querySelector('.cards').innerHTML;
     let dupli = document.querySelector('.courses').innerHTML;
     let clone = document.querySelector('.customer-list').innerHTML;
+
     if(arr[0].id === 1){
         if(arr[i] === arr[0])continue;
         card.innerHTML = `
@@ -90,6 +92,9 @@ for(let i = 0; i<arr.length; i++){
                                 <img src="${arr[i].imgSrc}" alt="">
                             </div>
         </div>`+ fetch;
+        let cardColor = document.querySelector('.category-card')
+        console.log(cardColor)
+        cardColor.style.backgroundColor = `${arr[i].background}`
     }else if(arr[0].id === 2){
         if(arr[i] === arr[0])continue;
         courses.innerHTML = `<div class="course-card d-flex justify-content-between">
@@ -103,7 +108,10 @@ for(let i = 0; i<arr.length; i++){
                 color='#fff8f8'></box-icon></a>
         </div>
     </div>` + dupli;
-    }else if(arr[0].id === 3){
+    let courseColor = document.querySelector('.card-img')
+        console.log(courseColor)
+        courseColor.style.backgroundColor = `${arr[i].background}`
+    }else{
         if(arr[i] === arr[0])continue;
         list.innerHTML = `
         <div class="customer-card">

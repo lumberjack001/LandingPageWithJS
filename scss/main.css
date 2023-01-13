@@ -11122,4 +11122,58 @@ nav .navlinks a {
   border: 0;
   border-radius: 0.5rem;
   padding: 0.7rem 2rem;
+}
+
+footer {
+  margin: 5rem;
+}
+footer .company {
+  margin: 3rem;
+}
+footer .company div {
+  width: 22.5%;
+}
+footer .company div a {
+  color: var(--textcolor);
+  text-decoration: none;
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+footer .company .subscribe {
+  background-color: var(--dark);
+  border-radius: 0.3rem;
+  padding: 1.5rem;
+}
+footer .company .subscribe form {
+  width: 100%;
+  margin: 1rem 0;
+  background-color: var(--textcolor);
+  border-radius: 0.25rem;
+}
+footer .company .subscribe form input {
+  width: 70%;
+  font-size: 0.75rem;
+  border: 0;
+  border-radius: 0.25rem;
+  padding: 0 0.5rem;
+}
+footer .company .subscribe form button {
+  width: 30%;
+  padding: 0.5rem;
+  border: 0;
+  border-radius: 0.25rem;
+}
+footer .company .subscribe p {
+  font-size: 0.75rem;
+}
+footer .last {
+  margin: 2rem 0;
+}
+footer .last a {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: var(--textcolor);
+}
+footer .last .social-img {
+  margin: 0 0.5rem;
 }/*# sourceMappingURL=main.css.map */
